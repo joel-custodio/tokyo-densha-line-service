@@ -1,0 +1,22 @@
+{
+  "name": "tokyo-densha-line-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-custodio/tokyo-densha-line-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-custodio/tokyo-densha-line-service/issues"
+  },
+  "homepage": "https://github.com/joel-custodio/tokyo-densha-line-service#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
