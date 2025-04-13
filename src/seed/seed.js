@@ -75,12 +75,34 @@ const stations = [
 	{ id: 71, name: 'Inage' },
 	{ id: 72, name: 'Nishi-Chiba' },
 	{ id: 73, name: 'Chiba' },
+	{ id: 74, name: 'Ōmiya' },
+	{ id: 75, name: 'Saitama-Shintoshin' },
+	{ id: 76, name: 'Yono' },
+	{ id: 77, name: 'Kita-Urawa' },
+	{ id: 78, name: 'Urawa' },
+	{ id: 79, name: 'Minami-Urawa' },
+	{ id: 80, name: 'Warabi' },
+	{ id: 81, name: 'Nishi-Kawaguchi' },
+	{ id: 82, name: 'Kawaguchi' },
+	{ id: 83, name: 'Akabane' },
+	{ id: 84, name: 'Higashi-Jūjō' },
+	{ id: 85, name: 'Ōji' },
+	{ id: 86, name: 'Kami-Nakazato' },
+	{ id: 87, name: 'Ōimachi' },
+	{ id: 88, name: 'Ōmori' },
+	{ id: 89, name: 'Kamata' },
+	{ id: 90, name: 'Kawasaki' },
+	{ id: 91, name: 'Tsurumi' },
+	{ id: 92, name: 'Shin-Koyasu' },
+	{ id: 93, name: 'Higashi-Kanagawa' },
+	{ id: 94, name: 'Yokohama' },
 ];
 
 const lines = [
 	{ line_id: 1, name: 'Yamanote Line' },
 	{ line_id: 2, name: 'Chūō Line' },
 	{ line_id: 3, name: 'Chūō-Sōbu Line' },
+	{ line_id: 4, name: 'Keihin-Tōhoku Line' },
 ];
 
 async function seedDatabase() {
@@ -117,6 +139,7 @@ async function seedDatabase() {
     	(tl.name = 'Yamanote Line' AND s.name IN ('Tokyo', 'Kanda', 'Akihabara', 'Okachimachi', 'Ueno', 'Uguisudani', 'Nippori', 'Nishi-Nippori', 'Tabata', 'Komagome', 'Sugamo', 'Ōtsuka', 'Ikebukuro', 'Mejiro', 'Takadanobaba', 'Shin-Ōkubo', 'Shinjuku', 'Yoyogi', 'Harajuku', 'Shibuya', 'Ebisu', 'Meguro', 'Gotanda', 'Osaki', 'Shinagawa', 'Tamachi', 'Hamamatsuchō', 'Shimbashi'))
     	OR (tl.name = 'Chūō Line' AND s.name IN ('Tokyo', 'Kanda', 'Ochanomizu', 'Yotsuya', 'Shinjuku', 'Nakano', 'Ogikubo', 'Kichijōji', 'Mitaka', 'Tachikawa', 'Hachiōji'))
     	OR (tl.name = 'Chūō-Sōbu Line' AND s.name IN ('Mitaka', 'Kichijōji', 'Nishi-Ogikubo', 'Ogikubo', 'Asagaya', 'Koenji', 'Nakano', 'Higashi-Nakano', 'Ōkubo', 'Shinjuku', 'Yoyogi', 'Sendagaya', 'Shinanomachi', 'Yotsuya', 'Ichigaya', 'Iidabashi', 'Suidōbashi', 'Ochanomizu', 'Akihabara', 'Asakusabashi', 'Ryōgoku', 'Kinshichō', 'Kameido', 'Nishi-Funabashi'))
+			OR (tl.name = 'Keihin-Tōhoku Line' AND s.name IN ('Ōmiya', 'Saitama-Shintoshin', 'Yono', 'Kita-Urawa', 'Urawa', 'Minami-Urawa', 'Warabi', 'Nishi-Kawaguchi', 'Kawaguchi', 'Akabane', 'Higashi-Jūjō', 'Ōji', 'Kami-Nakazato', 'Tabata', 'Nishi-Nippori', 'Nippori', 'Uguisudani', 'Ueno', 'Okachimachi', 'Akihabara', 'Kanda', 'Tokyo', 'Yūrakuchō', 'Shimbashi', 'Hamamatsuchō', 'Tamachi', 'Takanawa Gateway', 'Shinagawa', 'Ōimachi', 'Ōmori', 'Kamata', 'Kawasaki', 'Tsurumi', 'Shin-Koyasu', 'Higashi-Kanagawa', 'Yokohama'))
 		)
 		ON CONFLICT DO NOTHING;
 		`;

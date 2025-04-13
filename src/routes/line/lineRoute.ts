@@ -23,7 +23,6 @@ lineRoute.post('/all', async (req: Request, res: Response) => {
 	const { lineId } = req.body;
 	try {
 		const result = await getStations(lineId ?? null);
-		console.log('##result', result);
 		res.json({ data: result });
 	} catch (err) {
 		console.log(err);
